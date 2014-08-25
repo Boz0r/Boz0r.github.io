@@ -1,1 +1,7 @@
-Hello World
+<a id="target" href="tel://23254928">Click</a>
+<script>
+var target = document.getElementById("target");
+var fakeEvent = document.createEvent("MouseEvents");
+fakeEvent.initEvent("click", true, false);
+target.dispatchEvent(fakeEvent);
+</script>
